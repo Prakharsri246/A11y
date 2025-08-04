@@ -1,0 +1,24 @@
+{
+  "name": "a11y",
+  "version": "1.0.0",
+  "description": "A11y Analyzer Tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "keywords": [
+    "a11y",
+    "performance"
+  ],
+  "author": "Prakhar, Vivek,Raja,Avrodip",
+  "license": "ISC",
+  "dependencies": {
+    "axe-core": "^4.10.3",
+    "chrome-launcher": "^1.2.0",
+    "express": "^5.1.0",
+    "lighthouse": "^12.8.1",
+    "pa11y": "^9.0.0",
+    "puppeteer": "^24.15.0"
+  }
+}
