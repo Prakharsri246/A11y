@@ -1,8 +1,14 @@
 const express = require('express');
 const path = require('path');
-
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Enable CORS for all routes
+app.use(cors());
+
+// Enable JSON body parsing
+app.use(express.json());
 
 // Serve static files (axe.min.js)
 app.use('/axe', express.static(path.join(__dirname, 'public')));

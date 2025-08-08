@@ -5,9 +5,9 @@ const path = require('path');
 
 const router = express.Router();
 
-router.get('/scan', async (req, res) => {
-  const { url } = req.query;
-  if (!url) return res.status(400).json({ error: 'Missing URL query parameter' });
+router.post('/scan', async (req, res) => {
+  const { url } = req.body; // Extract URL from the POST request body
+  if (!url) return res.status(400).json({ error: 'Missing URL in request body' });
 
   try {
     // ───────────────────────────────

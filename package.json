@@ -16,6 +16,7 @@
   "dependencies": {
     "axe-core": "^4.10.3",
     "chrome-launcher": "^1.2.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "lighthouse": "^12.8.1",
     "pa11y": "^9.0.0",
